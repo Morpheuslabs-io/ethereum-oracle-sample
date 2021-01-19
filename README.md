@@ -24,6 +24,10 @@ Get the current ETH/USD price from the Coinbase API through an Ethereum Oracle
 
 ## Project setup
 
+```
+cd ethereum-oracle-sample
+```
+
 ### Install dependencies
 ```
 npm install
@@ -61,7 +65,12 @@ Output should be something like this
     "contract_myid": "0x9fa87c542cab950bd129f3d2d13cba6199741bd1984351c04e83c54620dfee1b",
     "contract_address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
 ```
+### Get RPC URL and config in HelloWorld.vue
+Click on (+) icon in terminal window, choose servers tab, and then copy URL of ethbrige (port 9545) to config for RPC_URL
 
+```
+const RPC_URL = "https://serverjujzjg0r-truffle-dev-machine-server-9545.morpheuslabs.io";
+```
 ### Copy your contract address into HelloWorld.vue
 ```
 let myContract = new web3.eth.Contract(

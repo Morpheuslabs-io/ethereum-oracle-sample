@@ -11,7 +11,8 @@ import { Vue, Component, Prop, Watch } from "vue-property-decorator";
 import Web3 from "web3";
 const MyContract = require("../../build/contracts/EthPrice.json");
 
-const web3 = new Web3(new Web3.providers.HttpProvider("https://serverjujzjg0r-truffle-dev-machine-server-9545.morpheuslabs.io"));
+const RPC_URL = "https://serverjujzjg0r-truffle-dev-machine-server-9545.morpheuslabs.io";
+const web3 = new Web3(new Web3.providers.HttpProvider(RPC_URL));
 
 let myContract = new web3.eth.Contract(
   MyContract.abi,

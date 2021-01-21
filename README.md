@@ -84,5 +84,6 @@ let myContract = new web3.eth.Contract(
 ```
 npm run serve
 ```
-
+Dev server run on port 8080, use link that map to port 8080 display on tab server.
 Enjoy!
+
